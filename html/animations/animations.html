@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            animation-name: animation;
+            animation-duration: 2s;
+        }
+
+        @keyframes animation{
+            0%{
+                background-color: red;
+            }
+            20%{
+                background-color: green;
+            }
+            40%{
+                background-color: yellow;
+            }
+            60%{
+                background-color: blue;
+            }
+            80%{
+                background-color: orangered;
+            }
+            100%{
+                background-color: antiquewhite;
+            } 
+        } */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height:100vh;
+           /* width: 600px;*/
+            background-color: black;
+            position: relative;
+        }
+        .box1{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            position: absolute;
+            animation-name: boxmove;
+            animation-duration: 5s;
+            animation-iteration-count:infinite;
+            animation-delay: 2s;
+        }
+
+        @keyframes boxmove{
+            0%{
+                top: 0;
+                left: 0;
+                background-color: red;
+            }
+            10%{
+                top: 0;
+                right: 0;
+            }
+           20%{
+                top:0;
+                right: 0;
+                background-color: blue;
+            }
+            40%{
+                 top: 300;
+                right: 0;
+                background-color: goldenrod;
+            }
+            60%{
+                right: 300;
+                bottom:0;
+                background-color: green;
+            }
+            100%{
+                bottom: 400px;
+                background-color: antiquewhite;
+            }
+        }            
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1"></div>
+    </div>
+</body>
+</html>
